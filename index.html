@@ -7,8 +7,11 @@
     <title>Interactive Agency - Landingpage using HTML & CSS</title>
   </head>
   <body>
+    <!-- <header> representa contenido introductorio o de navegación para la página o para una sección. -->
     <header>
       <img src="./assets/Logo.png" alt="" />
+
+      <!-- <nav> representa una sección cuyo propósito principal es proporcionar enlaces de navegación. -->
       <nav>
         <ul>
           <li><a href="#" alt="">Home</a></li>
@@ -20,11 +23,30 @@
       </nav>
     </header>
 
+    <!-- <main> contiene el contenido principal de la página. -->
     <main>
-      <h1>Lorem ipsum dolor sit amet</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam?</p>
-      <button>Ask for price</button>
-      <button>scrool down</button>
+      <!-- <section> agrupa contenido temáticamente relacionado. -->
+      <section class="hero">
+        <!-- - <h1> identifica el encabezado principal de la página o sección, según el contexto. -->
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam?
+        </p>
+        <button>Ask for price</button>
+        <button>scrool down</button>
+      </section>
+
+      <!-- <article> — contenido independiente 
+    Una tarjeta que describe un servicio completo, con título, descripción y enlace, puede funcionar como un <article> 
+    si constituye una unidad de contenido con sentido propio, potencialmente reutilizable o distribuible por separado.
+       Ejemplos: una publicación de blog, una noticia o una ficha de servicio con contenido propio. -->
+
+      <!-- <div> — contenedor genérico
+    Una caja que agrupa elementos para aplicar Flexbox, Grid, márgenes, fondos o cualquier otra regla CSS, sin representar una unidad semántica específica.
+        Ejemplos: un contenedor para alinear un icono con un título o un wrapper para organizar varias tarjetas. -->
+
+      <!-- Si llevan al usuario a otra página o sección, normalmente utilizarías <a>.
+            Si ejecutan una acción, como abrir un formulario modal, normalmente utilizarías <button>. -->
     </main>
 
     <footer></footer>
