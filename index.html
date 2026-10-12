@@ -15,8 +15,8 @@
       <nav>
         <ul>
           <li><a href="#" alt="">Home</a></li>
+          <li><a href="#" alt="">Services</a></li>
           <li><a href="#" alt="">About us</a></li>
-          <li><a href="#" alt="">Offer</a></li>
           <li><a href="#" alt="">Portfolio</a></li>
           <li><a href="#" alt="">Contact</a></li>
         </ul>
@@ -26,7 +26,7 @@
     <!-- <main> contiene el contenido principal de la página. -->
     <main>
       <!-- <section> agrupa contenido temáticamente relacionado. -->
-      <section class="hero">
+      <section id="hero">
         <!-- - <h1> identifica el encabezado principal de la página o sección, según el contexto. -->
         <h1>Lorem ipsum dolor sit amet</h1>
         <p>
@@ -35,7 +35,6 @@
         <button>Ask for price</button>
         <button>scrool down</button>
       </section>
-
       <!-- <article> — contenido independiente 
     Una tarjeta que describe un servicio completo, con título, descripción y enlace, puede funcionar como un <article> 
     si constituye una unidad de contenido con sentido propio, potencialmente reutilizable o distribuible por separado.
@@ -47,8 +46,211 @@
 
       <!-- Si llevan al usuario a otra página o sección, normalmente utilizarías <a>.
             Si ejecutan una acción, como abrir un formulario modal, normalmente utilizarías <button>. -->
+
+      <section id="value-proposition">
+        <article>
+          <h2>BestDesign</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iure
+            fugiat dolores praesentium rerum odit saepe asperiores, doloremque
+            esse. Suscipit aliquam nobis corporis iure, animi dolorem ratione
+            blanditiis aliquid tempore!
+          </p>
+          <button>Ask for price</button>
+        </article>
+
+        <article>
+          <h2>BestCode</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            enim reiciendis delectus iste harum obcaecati minus placeat corrupti
+            veritatis animi? Odio laborum voluptas obcaecati voluptatum saepe
+            architecto! Eum, odio enim.
+          </p>
+          <button>Ask for price</button>
+        </article>
+      </section>
+
+      <section id="services">
+        <h2>What we do?</h2>
+        <!-- Accessibility note: The images in this section are decorative and provide no additional information 
+         beyond the service title and description. Therefore, `alt=""` is intentional, 
+         allowing screen readers to skip them. -->
+        <div>
+          <article>
+            <img src="./assets/services_web-design.png" alt="" />
+            <div>
+              <h3>Web design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                modi porro soluta dicta iste. Eius est officiis quis expedita
+                nemo?
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/services_web-applications.png" alt="" />
+            <div>
+              <h3>Web Applications</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                modi porro soluta dicta iste. Eius est officiis quis expedita
+                nemo?
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/services_digital-paiting.png" alt="" />
+            <div>
+              <h3>Digital paiting</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                modi porro soluta dicta iste. Eius est officiis quis expedita
+                nemo?
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/services_desktop-applications.png" alt="" />
+            <div>
+              <h3>Desktop Applications</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                modi porro soluta dicta iste. Eius est officiis quis expedita
+                nemo?
+              </p>
+            </div>
+          </article>
+        </div>
+        <button>Ask for price</button>
+      </section>
+      <section id="portfolio">
+        <div class="carousel">
+          <img
+            src="./assets/portfolio-1.jpg"
+            alt="Landingpage project: DroneZone"
+            class="carousel-item"
+            width="400"
+          />
+          <img
+            src="./assets/portfolio-2.jpg"
+            alt="Landingpage project: Neptune template"
+            class="carousel-item"
+            width="400"
+          />
+          <img
+            src="./assets/portfolio-3.jpg"
+            alt="Landingpage project: Fit App"
+            class="carousel-item"
+            width="400"
+          />
+          <div>
+            <button aria-label="Previous projects">&lt;</button>
+            <button aria-label="Next projects">&gt;</button>
+          </div>
+        </div>
+        <button>Watch more</button>
+      </section>
+
+      <section>
+        <h2>About us!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem veniam
+          aspernatur nam quidem sunt quo quisquam, culpa assumenda dolorum
+          quasi.
+        </p>
+
+        <div class="company-members">
+          <article>
+            <img
+              src="./assets/profile-pic-1.png"
+              alt="Profilepicture of John Doe"
+            />
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+          <article>
+            <img
+              src="./assets/profile-pic-2.png"
+              alt="Profilepicture of John Doe"
+            />
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+          <article>
+            <img
+              src="./assets/profile-pic-3.png"
+              alt="Profilepicture of John Doe"
+            />
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+          <article>
+            <img
+              src="./assets/profile-pic-4.png"
+              alt="Profilepicture of John Doe"
+            />
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+        </div>
+        <button>Watch more</button>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div>
+        <article>
+          <h2>Navigation</h2>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </article>
+        <article>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </article>
+        <article>
+          <h2>Follow us</h2>
+          <ul>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </article>
+        <article>
+          <h2>Contact</h2>
+          <h3>InteractiveAgency</h3>
+          <address>
+            <p>
+              Av. Juárez 4 Colonia Centro, Centro Cuauhtémoc 06000 Ejido del
+              Centro, CDMX México
+            </p>
+            <p>Tel. +52 (0) 619 193 088</p>
+            <p>Fax +52 (0) 619 193 321</p>
+            <p>Cel. +52 (0) 574 586 186</p>
+            <a href="mailto:office@interactive-agency.com"
+              >office@interactive-agency.com</a
+            >
+            <a href="https://www.interactive-agency.com"
+              >www.interactive-agency.com</a
+            >
+          </address>
+        </article>
+      </div>
+      <img src="./assets/Logo.png" alt="Company's logo" />
+      <p>© InteractiveAgency. All rights reserved.</p>
+    </footer>
   </body>
 </html>
