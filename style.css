@@ -1,4 +1,84 @@
-/* body {
-  background-color: black;
+/* 1. Reset default spacing */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* 2. Set up the document */
+html {
+  /* this defines what 1 rem is = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #484848;
+}
+
+.container {
+  max-width: 153.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+  position: absolute;
+}
+
+.icon-nav-container {
+  margin-top: 2rem;
+  padding: 1rem 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-header ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-header ul li a {
+  font-weight: 500;
+  padding: 0.7rem 1.4rem;
+  border: 0.1rem solid transparent;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #484848;
+  border-radius: 6rem;
+  transition:
+    box-shadow 0.3s ease-out,
+    color 0.3s ease-out,
+    border-color 0.3s ease-out;
+}
+.nav-header ul li a:hover {
+  color: #333333;
+  border-color: #545454;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#hero {
   min-height: 100vh;
-} */
+  background-image: url(./assets/city-hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

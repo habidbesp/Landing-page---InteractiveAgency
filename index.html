@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Interactive Agency - Landingpage using HTML & CSS</title>
   </head>
   <body>
     <!-- <header> representa contenido introductorio o de navegación para la página o para una sección. -->
     <header>
-      <img src="./assets/Logo.png" alt="" />
+      <div class="container icon-nav-container">
+        <img src="./assets/Logo.png" alt="The logo of InteractiveAgency" />
 
-      <!-- <nav> representa una sección cuyo propósito principal es proporcionar enlaces de navegación. -->
-      <nav>
-        <ul>
-          <li><a href="#" alt="">Home</a></li>
-          <li><a href="#" alt="">Services</a></li>
-          <li><a href="#" alt="">About us</a></li>
-          <li><a href="#" alt="">Portfolio</a></li>
-          <li><a href="#" alt="">Contact</a></li>
-        </ul>
-      </nav>
+        <!-- <nav> representa una sección cuyo propósito principal es proporcionar enlaces de navegación. -->
+        <nav class="nav-header">
+          <ul>
+            <li><a href="#" alt="">Home</a></li>
+            <li><a href="#" alt="">Services</a></li>
+            <li><a href="#" alt="">About us</a></li>
+            <li><a href="#" alt="">Portfolio</a></li>
+            <li><a href="#" alt="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- <main> contiene el contenido principal de la página. -->
-    <main>
+    <main class="container">
       <!-- <section> agrupa contenido temáticamente relacionado. -->
       <section id="hero">
         <!-- - <h1> identifica el encabezado principal de la página o sección, según el contexto. -->
@@ -199,7 +208,7 @@
     </main>
 
     <footer>
-      <div>
+      <div class="container">
         <article>
           <h2>Navigation</h2>
           <nav>
@@ -249,8 +258,10 @@
           </address>
         </article>
       </div>
-      <img src="./assets/Logo.png" alt="Company's logo" />
-      <p>© InteractiveAgency. All rights reserved.</p>
+      <div class="container">
+        <img src="./assets/Logo.png" alt="Company's logo" />
+        <p>© InteractiveAgency. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
