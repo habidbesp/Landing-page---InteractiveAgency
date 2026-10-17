@@ -5,7 +5,7 @@
   --secondary-color: #ba0085; */
   --text-color-light: #f0f0f0;
   --text-color-dark: #484848;
-  /* --background-color: #ffffff; */
+  --background-color: ##ffffff;
 }
 *,
 *::after,
@@ -28,7 +28,7 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: var(--text-color-dark);
 }
 
@@ -227,15 +227,20 @@ ul {
 /* value-proposition section start */
 
 #value-proposition {
+  min-height: 50rem;
   display: flex;
 }
 
 #value-proposition article {
-  padding: 12rem;
+  padding: 0 12rem;
   color: var(--text-color-light);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 #value-proposition article h2 span {
   font-weight: 400;
@@ -247,6 +252,7 @@ ul {
 
 #value-proposition article button {
   margin-top: 2.5rem;
+  align-self: flex-start;
 }
 
 .value-proposition-card-1 {
@@ -258,3 +264,15 @@ ul {
 }
 
 /* value-proposition section end */
+
+/* services section start */
+#services {
+  padding: 5rem 10rem;
+}
+
+.services-content {
+  margin: 5rem 0;
+  display: flex;
+}
+
+/* services section end */
