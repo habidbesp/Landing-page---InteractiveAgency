@@ -5,7 +5,8 @@
   --secondary-color: #ba0085; */
   --text-color-light: #f0f0f0;
   --text-color-dark: #484848;
-  --background-color: ##ffffff;
+  --background-light: #ffffff;
+  --background-dark: #060606;
 }
 *,
 *::after,
@@ -28,7 +29,7 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: var(--background-color);
+  background-color: var(--background-light);
   color: var(--text-color-dark);
 }
 
@@ -227,12 +228,14 @@ ul {
 /* value-proposition section start */
 
 #value-proposition {
-  min-height: 50rem;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #value-proposition article {
-  padding: 0 12rem;
+  flex: 1 1 calc(50%);
+  padding: 10rem;
   color: var(--text-color-light);
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,19 +243,21 @@ ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
 }
+
 #value-proposition article h2 span {
   font-weight: 400;
 }
 
 #value-proposition article p {
   margin-top: 0.6rem;
+  max-width: 45ch;
 }
 
 #value-proposition article button {
   margin-top: 2.5rem;
-  align-self: flex-start;
 }
 
 .value-proposition-card-1 {
@@ -268,11 +273,83 @@ ul {
 /* services section start */
 #services {
   padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 .services-content {
-  margin: 5rem 0;
   display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap permite que los artículos pasen a la siguiente
+  línea cuando no caben en la actual. El objetivo es distribuir
+  las cuatro tarjetas en dos filas de dos elementos cuando hay
+  suficiente espacio disponible. */
+  flex-wrap: wrap;
+  gap: 4rem;
 }
 
+.services-content article {
+  /* La abreviatura flex agrupa tres propiedades:
+  flex-grow: 0 evita que las tarjetas crezcan para ocupar el
+  espacio libre; flex-shrink: 0 evita que se reduzcan;
+  flex-basis establece su tamaño base.
+  
+  calc(50% - 2rem) reserva la mitad del ancho disponible para
+  cada tarjeta, menos 2rem. Así se tiene en cuenta la mitad
+  del gap de 4rem entre las dos tarjetas de cada fila. */
+  flex: 0 0 calc(50% - 2rem);
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.services-content article img {
+  width: 11rem;
+  height: auto;
+}
+
+.services-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* La unidad ch equivale al ancho del carácter del número cero (0) 
+de la tipografía que se esté usando. Como regla general en el diseño 
+editorial, se calcula que 1 palabra equivale aproximadamente a 6 
+caracteres (incluyendo el espacio).
+Si se desea que la línea tenga, por ejemplo, un promedio de 7 palabras, 
+se debe multiplicar 7 palabras × 6 ch = 42ch.
+ */
+.services-item-text p {
+  max-width: 42ch;
+}
 /* services section end */
+
+/* portfolio section start */
+
+#portfolio {
+  padding: 5rem 0;
+  background-color: var(--background-dark);
+}
+
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.carousel-item {
+  width: 40rem;
+  height: auto;
+}
+
+/* para mañana, empezar botones "fake" de desplazamiento */
+/* investigar que hacer para que overflow no empuje el layout y cree scroll inecesario */
+/* portfolio section end */
