@@ -139,20 +139,9 @@
         </div>
         <button class="btn">Ask for price</button>
       </section>
+
       <section id="portfolio">
         <div class="portfolio-carousel">
-          <button
-            class="portfolio-carousel-button portfolio-carousel-button-left"
-            aria-label="Previous projects"
-          >
-            <span>〈</span>
-          </button>
-          <button
-            class="portfolio-carousel-button portfolio-carousel-button-right"
-            aria-label="Next projects"
-          >
-            〉
-          </button>
           <div class="portfolio-carousel-track">
             <img
               src="./assets/portfolio-1.jpg"
@@ -170,11 +159,25 @@
               class="portfolio-carousel-item"
             />
           </div>
+          <button
+            class="portfolio-carousel-button portfolio-carousel-button-left"
+            aria-label="Previous projects"
+          >
+            ⟨
+          </button>
+          <button
+            class="portfolio-carousel-button portfolio-carousel-button-right"
+            aria-label="Next projects"
+          >
+            ⟩
+          </button>
+          <div class="portfolio-button-contain">
+            <button class="btn">Watch more</button>
+          </div>
         </div>
-        <!-- <button>Watch more</button> -->
       </section>
 
-      <section>
+      <section id="about">
         <h2>About us!</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem veniam
@@ -182,8 +185,8 @@
           quasi.
         </p>
 
-        <div class="company-members">
-          <article>
+        <div class="about-members-contain">
+          <article class="about-members-card">
             <img
               src="./assets/profile-pic-1.png"
               alt="Profilepicture of John Doe"
@@ -191,7 +194,7 @@
             <h3>John Doe</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </article>
-          <article>
+          <article class="about-members-card">
             <img
               src="./assets/profile-pic-2.png"
               alt="Profilepicture of John Doe"
@@ -199,7 +202,7 @@
             <h3>John Doe</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </article>
-          <article>
+          <article class="about-members-card">
             <img
               src="./assets/profile-pic-3.png"
               alt="Profilepicture of John Doe"
@@ -207,7 +210,7 @@
             <h3>John Doe</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </article>
-          <article>
+          <article class="about-members-card">
             <img
               src="./assets/profile-pic-4.png"
               alt="Profilepicture of John Doe"
@@ -216,7 +219,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </article>
         </div>
-        <button>Watch more</button>
+        <button class="btn">Watch more</button>
       </section>
     </main>
 

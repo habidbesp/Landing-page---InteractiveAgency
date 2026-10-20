@@ -340,29 +340,34 @@ se debe multiplicar 7 palabras × 6 ch = 42ch.
 .portfolio-carousel {
   width: 100%;
   overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-color-dark) var(--background-dark);
 }
 
 .portfolio-carousel-track {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  width: max-content;
+  min-width: 100%;
+  margin-inline: auto;
 }
 
 .portfolio-carousel-item {
-  width: 40rem;
+  flex: 0 0 40rem;
+  min-width: 0;
 }
 
 .portfolio-carousel-button {
   position: absolute;
   cursor: pointer;
-  /* width: 3rem;
-  height: 3rem; */
+  width: 4rem;
+  height: 4rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.portfolio-carousel-button-left {
+  background-color: var(--text-color-light);
+  color: var(--text-color-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,11 +375,66 @@ se debe multiplicar 7 palabras × 6 ch = 42ch.
   font-size: 2.5rem;
   border: none;
   border-radius: 0.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.portfolio-carousel-button:hover {
+  background-color: var(--background-light);
+}
+
+.portfolio-carousel-button-left {
   left: 0;
 }
 
 .portfolio-carousel-button-right {
   right: 0;
 }
-/* continuar botones "fake" de desplazamiento */
+.portfolio-button-contain {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 /* portfolio section end */
+
+/* section about start */
+
+#about {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  color: var(--text-color-light);
+  text-align: center;
+  background-image: url(./assets/bg-about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about p {
+  max-width: 60ch;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.about-members-contain {
+  margin: 5rem 0;
+  padding: 3rem;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.about-members-card {
+  flex: 1 1 calc(25% - 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-members-card h3 {
+  margin-top: 1.5rem;
+}
+/* revisar esta seccion con chat gpt */
+/* section about end */
