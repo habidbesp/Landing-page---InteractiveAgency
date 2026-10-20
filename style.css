@@ -98,7 +98,6 @@ p {
 
 header {
   width: 100%;
-  height: 10vh;
   background-color: transparent;
   position: absolute;
   z-index: 1000;
@@ -333,23 +332,49 @@ se debe multiplicar 7 palabras × 6 ch = 42ch.
 /* portfolio section start */
 
 #portfolio {
+  position: relative;
   padding: 5rem 0;
   background-color: var(--background-dark);
 }
 
-.carousel {
+.portfolio-carousel {
   width: 100%;
   overflow-x: auto;
+}
+
+.portfolio-carousel-track {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
-.carousel-item {
+.portfolio-carousel-item {
   width: 40rem;
-  height: auto;
 }
 
-/* para mañana, empezar botones "fake" de desplazamiento */
-/* investigar que hacer para que overflow no empuje el layout y cree scroll inecesario */
+.portfolio-carousel-button {
+  position: absolute;
+  cursor: pointer;
+  /* width: 3rem;
+  height: 3rem; */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.portfolio-carousel-button-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  left: 0;
+}
+
+.portfolio-carousel-button-right {
+  right: 0;
+}
+/* continuar botones "fake" de desplazamiento */
 /* portfolio section end */
