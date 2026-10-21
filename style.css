@@ -41,6 +41,10 @@ body {
 }
 /* layout end */
 
+a {
+  text-decoration: none;
+}
+
 /* Typography start */
 h1,
 h2,
@@ -124,7 +128,6 @@ ul {
   font-weight: 500;
   padding: 0.7rem 1.4rem;
   border: 0.1rem solid transparent;
-  text-decoration: none;
   font-size: 1.6rem;
   color: var(--text-color-dark);
   border-radius: 6rem;
@@ -133,6 +136,7 @@ ul {
     color 0.3s ease-out,
     border-color 0.3s ease-out;
 }
+
 .nav-header ul li a:hover {
   color: #333333;
   border-color: #545454;
@@ -426,6 +430,7 @@ se debe multiplicar 7 palabras × 6 ch = 42ch.
 }
 
 .about-members-card {
+  padding: 1rem;
   flex: 1 1 calc(25% - 3rem);
   display: flex;
   flex-direction: column;
@@ -443,7 +448,68 @@ se debe multiplicar 7 palabras × 6 ch = 42ch.
 /* section about end */
 
 /* footer start */
+footer {
+  background-color: var(--background-dark);
+  color: var(--text-color-light);
+}
 
-/* crear footer  */
+.footer-content {
+  padding: 5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content article {
+  flex: 1 1 calc(25% - 1.5rem);
+  padding: 1rem;
+}
+
+.footer-navigations {
+  margin-top: 1.5rem;
+}
+
+.footer-navigations > :not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.footer-navigations li a {
+  color: var(--text-color-light);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-navigations li a:hover {
+  color: var(--text-color-dark);
+}
+
+.footer-contact > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer-agancy-address > :not(:last-child) {
+  margin-top: 1rem;
+}
+
+.footer-resources {
+  display: block;
+  color: var(--text-color-light);
+}
+
+.footer-resources:hover {
+  color: var(--text-color-dark);
+  transition: color 0.3s ease;
+}
+
+.copyright {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+.copyright span {
+  font-weight: 700;
+}
 
 /* footer end */
