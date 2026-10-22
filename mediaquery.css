@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+  .icon-nav-container {
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #services {
+    padding: 5rem;
+  }
+  .nav-header {
+    display: none;
+  }
+  .services-content article {
+    flex-direction: column;
+  }
+}

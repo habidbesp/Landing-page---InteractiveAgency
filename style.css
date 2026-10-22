@@ -29,7 +29,7 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: var(--background-light);
+  background-color: var(--background-dark);
   color: var(--text-color-dark);
 }
 
@@ -275,6 +275,7 @@ ul {
 
 /* services section start */
 #services {
+  background-color: var(--text-color-light);
   padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
@@ -488,18 +489,18 @@ footer {
   margin-bottom: 1rem;
 }
 
-.footer-agancy-address > :not(:last-child) {
+.footer-agency-address > :not(:last-child) {
   margin-top: 1rem;
 }
 
 .footer-resources {
   display: block;
   color: var(--text-color-light);
+  transition: color 0.3s ease;
 }
 
 .footer-resources:hover {
   color: var(--text-color-dark);
-  transition: color 0.3s ease;
 }
 
 .copyright {
