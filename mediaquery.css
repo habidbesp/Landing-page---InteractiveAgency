@@ -10,10 +10,69 @@
   #services {
     padding: 5rem;
   }
+
   .nav-header {
     display: none;
   }
+
   .services-content article {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-members-contain {
+    margin: 2rem 0;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .about-members-card {
+    flex-basis: calc(25% - 1.5rem);
+  }
+
+  .footer-content {
+    padding: 2rem;
+  }
+
+  .footer-content article {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .hero-content {
+    padding: 2rem;
+    width: 100%;
+    top: 15%;
+    gap: 2rem;
+  }
+  .hero-content button {
+    margin-top: 0;
+  }
+
+  .scroll-down-content {
+    bottom: 5%;
+  }
+
+  .scroll-down-button::before {
+    animation: none;
+  }
+
+  #value-proposition article {
+    padding: 3rem;
+  }
+  /* what we do with media 480 */
+  #services {
+    padding: 2rem;
   }
 }
