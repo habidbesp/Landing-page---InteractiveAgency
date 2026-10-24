@@ -304,7 +304,7 @@ ul {
   calc(50% - 2rem) reserva la mitad del ancho disponible para
   cada tarjeta, menos 2rem. Así se tiene en cuenta la mitad
   del gap de 4rem entre las dos tarjetas de cada fila. */
-  flex: 0 0 calc(50% - 2rem);
+  flex: 1 1 calc(50% - 2rem);
   padding: 1rem;
   display: flex;
   align-items: flex-start;

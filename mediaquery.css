@@ -74,5 +74,36 @@
   /* what we do with media 480 */
   #services {
     padding: 2rem;
+    gap: 2rem;
   }
+
+  .services-content {
+    gap: 2rem;
+  }
+
+  .services-content article {
+    gap: 1rem;
+  }
+
+  #portfolio {
+    padding: 3rem 0;
+  }
+
+  #about {
+    padding: 5rem 0;
+  }
+
+  .about-members-card {
+    flex: 1 1 100%;
+  }
+
+  .footer-content article {
+    padding: 0;
+    flex: 1 1 100%;
+  }
+  /* 
+  investigar que pasa cuando la pantalla pasa a landscape,
+  trabajar en el burgermenu
+  copyright arreglar
+  */
 }
