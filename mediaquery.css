@@ -6,13 +6,69 @@
   }
 }
 
-@media (max-width: 768px) {
-  #services {
-    padding: 5rem;
+@media (max-width: 868px) {
+  .icon-nav-container {
+    position: relative;
   }
 
   .nav-header {
-    display: none;
+    padding: 1.5rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 6.5rem;
+    background-color: var(--background-dark);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-heigh 0.2s ease-out;
+    max-width: unset;
+  }
+
+  .nav-header ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-header ul li a {
+    font-size: 2rem;
+    color: var(--text-color-light);
+    border: none;
+  }
+
+  .nav-header ul li a:hover {
+    box-shadow: none;
+    color: var(--text-color-dark);
+  }
+
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+
+  .menu-btn:checked ~ .nav-header {
+    max-height: 25em;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before,
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #services {
+    padding: 5rem;
   }
 
   .services-content article {
@@ -101,9 +157,14 @@
     padding: 0;
     flex: 1 1 100%;
   }
-  /* 
-  investigar que pasa cuando la pantalla pasa a landscape,
-  trabajar en el burgermenu
-  copyright arreglar
-  */
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+  #hero {
+    min-height: 600px;
+  }
+
+  .scroll-down-content {
+    bottom: 10%;
+  }
 }
