@@ -4,6 +4,24 @@
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
+  #services {
+    padding: 5rem 0;
+    gap: 2rem;
+  }
+  .services-content {
+    gap: 2rem;
+  }
+
+  .services-content article {
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+  }
+
+  .about-members-card {
+    flex-basis: calc(50% - 2rem);
+  }
 }
 
 @media (max-width: 868px) {
@@ -74,19 +92,17 @@
   .menu-btn:checked ~ .menu-icon .navicon:after {
     top: 0;
   }
-}
-/* revisar screen pequeño y crear barra de navegación */
 
-@media (max-width: 768px) {
-  #services {
+  #value-proposition article {
     padding: 5rem;
   }
+}
 
-  .services-content article {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 768px) {
+  #value-proposition article {
     text-align: center;
+    flex: 1 1 100%;
+    align-items: center;
   }
 
   #about {
@@ -100,10 +116,6 @@
     gap: 2rem;
   }
 
-  .about-members-card {
-    flex-basis: calc(25% - 1.5rem);
-  }
-
   .footer-content {
     padding: 2rem;
   }
@@ -114,12 +126,25 @@
 }
 
 @media (max-width: 480px) {
+  .icon-nav-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .icon-agency {
+    width: 20rem;
+  }
+
+  .menu-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
   h1 {
     font-size: 4rem;
   }
+
   .hero-content {
-    padding: 2rem;
-    width: 100%;
     top: 15%;
     gap: 2rem;
   }
@@ -136,12 +161,19 @@
   }
 
   #value-proposition article {
-    padding: 3rem;
+    padding: 3rem 0.5rem;
   }
-  /* what we do with media 480 */
+
+  #value-proposition article h2 {
+    font-size: 3rem;
+  }
+
   #services {
-    padding: 2rem;
     gap: 2rem;
+  }
+
+  #services h2 {
+    font-size: 3rem;
   }
 
   .services-content {
@@ -150,6 +182,10 @@
 
   .services-content article {
     gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   #portfolio {
@@ -157,11 +193,16 @@
   }
 
   #about {
-    padding: 5rem 0;
+    padding: 5rem 0.5rem;
+  }
+
+  .about-members-contain {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .about-members-card {
-    flex: 1 1 100%;
+    flex-basis: 100%;
   }
 
   .footer-content article {
@@ -179,3 +220,5 @@
     bottom: 10%;
   }
 }
+
+/* arreglar footer */
