@@ -16,6 +16,13 @@
   box-sizing: inherit;
 }
 
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
 /* 2. Set up the document */
 html {
   /* this defines what 1 rem is = 10px */
@@ -24,7 +31,7 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   box-sizing: border-box;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
@@ -35,7 +42,7 @@ body {
 
 /* layout start */
 .container {
-  max-width: 153.6rem;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
@@ -71,7 +78,7 @@ p {
 
 /* components start */
 .btn {
-  padding: 0.7rem 3rem;
+  padding: 0.3rem 2rem;
   background-image: linear-gradient(to right, #4a007c, #ba0085);
   color: var(--text-color-light);
   border-radius: 2rem;
@@ -81,6 +88,8 @@ p {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn::before {
@@ -147,6 +156,8 @@ ul {
 .menu-btn,
 .menu-icon {
   display: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navicon {
@@ -229,6 +240,8 @@ ul {
   width: 25px;
   border-radius: 5rem;
   background-color: var(--text-color-light);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .scroll-down-button::before {

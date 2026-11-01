@@ -221,4 +221,28 @@
   }
 }
 
+/* Large screens */
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 100%;
+  }
+
+  .container {
+    max-width: 1720px;
+  }
+
+  #services {
+    padding: 5rem;
+  }
+
+  #about {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .footer-content {
+    padding: 3rem;
+  }
+}
+
 /* arreglar footer */
