@@ -14,9 +14,11 @@ A responsive landing page built with HTML5 and CSS3.
     <img src="./assets/hero-page.png" width=400 alt="Hero section preview">
 </div>
 
-## Live Demo
+## Live
 
-[View the live website](https://habidbesp.github.io/Landing-page---InteractiveAgency/)
+<a href="https://habidbesp.github.io/Landing-page---InteractiveAgency/" target="_blank" rel="noopener noreferrer">
+  View the live website
+</a>
 
 ## Overview
 
@@ -81,9 +83,17 @@ cd Landing-page---InteractiveAgency
 
 ## Responsive Preview
 
-Check how the landing page adapts to different screen sizes using [Am I Responsive?](https://fireship.dev/amiresponsive?url=https://habidbesp.github.io/Landing-page---InteractiveAgency/).
+<a href="https://fireship.dev/amiresponsive?url=https://habidbesp.github.io/Landing-page---InteractiveAgency/" target="_blank" rel="noopener noreferrer">
+  Am I Responsive?
+</a>
+
+Check how the landing page adapts to different screen sizes using <a href="https://fireship.dev/amiresponsive?url=https://habidbesp.github.io/Landing-page---InteractiveAgency/" target="_blank" rel="noopener noreferrer">
+Am I Responsive?
+</a>.
 
 ## Credits
 
-- **Original design:** [Interactive Agency — PSD Template](https://symu.co/freebies/templates-4/interactive-agency-psd-template/) by Symu.
+- **Original design:** <a href="https://symu.co/freebies/templates-4/interactive-agency-psd-template/" target="_blank" rel="noopener noreferrer">
+  Interactive Agency — PSD Template
+  </a> by Symu.
 - **Implementation:** Recreated from the original design using HTML5 and CSS3.
