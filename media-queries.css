@@ -110,7 +110,7 @@
     padding-bottom: 2rem;
   }
 
-  .about-members-contain {
+  .about-members-container {
     margin: 2rem 0;
     padding: 2rem;
     gap: 2rem;
@@ -196,7 +196,7 @@
     padding: 5rem 0.5rem;
   }
 
-  .about-members-contain {
+  .about-members-container {
     padding-right: 0;
     padding-left: 0;
   }
