@@ -199,7 +199,7 @@ header {
 
 #hero {
   min-height: 100vh;
-  background-image: url(./assets/city-hero-background.jpg);
+  background-image: url(../assets/city-hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -323,11 +323,11 @@ header {
 }
 
 .value-proposition-card-1 {
-  background-image: url(./assets/value-proposition-1.jpg);
+  background-image: url(../assets/value-proposition-1.jpg);
 }
 
 .value-proposition-card-2 {
-  background-image: url(./assets/value-proposition-2.jpg);
+  background-image: url(../assets/value-proposition-2.jpg);
 }
 
 /* value-proposition section end */
@@ -452,7 +452,7 @@ header {
   padding-bottom: 7rem;
   color: var(--text-color-light);
   text-align: center;
-  background-image: url(./assets/bg-about.jpg);
+  background-image: url(../assets/bg-about.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
